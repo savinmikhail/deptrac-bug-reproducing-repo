@@ -1,0 +1,21 @@
+deptrac:
+    analyser:
+        types:
+            - class
+            - class_superglobal
+            - file
+            - function
+            - function_call
+            - function_superglobal
+            - use
+
+    paths:
+        - config
+        - src
+
+    layers:
+        - { name: config,     collectors: [ { type: directory, value: ./config/.* } ] }
+        - { name: src,        collectors: [ { type: directory, value: ./src/.* } ] }
+
+    ruleset:
+        config: [src]

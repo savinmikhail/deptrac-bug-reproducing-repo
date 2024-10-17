@@ -1,0 +1,11 @@
+{
+    "autoload": {
+        "psr-4": {
+            "SavinMikhail\\Deptrac\\": "src/",
+            "Config": "config/"
+        }
+    },
+    "require": {
+        "qossmic/deptrac": "^2.0"
+    }
+}
